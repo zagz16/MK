@@ -45,9 +45,9 @@ startLogFight("start", player1, player2);
 const generateLogs = (type, player1, player2, enemy, player) => {
     let text;
     if (player1) {
-        text = timeLogFight() + " " + logs[type][getRandomInt(arrLength(type))].replace("[playerKick]", player1.name).replace("[playerDefence]", player2.name) + " " + (-enemy.value) + " " + player1.hp + '/' + '100';
+        text = timeLogFight() + " " + logs[type][getRandomInt(arrLength(type))].replace("[playerKick]", player1.name).replace("[playerDefence]", player2.name) + " " + (-enemy.value) + " " + player2.hp + '/' + '100';
     } else if (player2) {
-        text = timeLogFight() + " " + logs[type][getRandomInt(arrLength(type))].replace("[playerKick]", player2.name).replace("[playerDefence]", player1.name) + " " + (-player.value) + " " + player2.hp + '/' + '100';
+        text = timeLogFight() + " " + logs[type][getRandomInt(arrLength(type))].replace("[playerKick]", player2.name).replace("[playerDefence]", player1.name) + " " + (-player.value) + " " + player1.hp + '/' + '100';
     }
     console.log(text);
     const el = `<p>${text}</p>`

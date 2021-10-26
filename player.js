@@ -31,7 +31,7 @@ export function changeHP(num) {
     } else {
         this.hp -= num;
     };
-
+    console.log(this.hp)
     return this.hp;
 }
 
