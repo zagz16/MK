@@ -48,4 +48,3 @@ export function renderHP() {
 export function attack() {
     console.log(this.name + " " + "Fight...")
 }
-///
